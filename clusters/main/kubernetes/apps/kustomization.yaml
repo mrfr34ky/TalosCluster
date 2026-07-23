@@ -15,3 +15,9 @@ resources:
   - paperless-ngx/ks.yaml
   - k8tz/ks.yaml
   - mealie/ks.yaml
+  - ext-nas/ks.yaml
+  - ext-pikvm/ks.yaml
+  - ext-jetkvm/ks.yaml
+  - ext-prox/ks.yaml
+  - ext-slzb/ks.yaml
+  - ext-printer/ks.yaml
