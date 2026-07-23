@@ -35,3 +35,5 @@ resources:
   - jdownloader2/ks.yaml
   - krusader/ks.yaml
   - filezilla/ks.yaml
+  - syncthing/ks.yaml
+  - profilarr/ks.yaml
