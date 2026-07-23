@@ -11,3 +11,4 @@ resources:
   - frigate/ks.yaml
   - vaultwarden/ks.yaml
   - mosquitto/ks.yaml
+  - nextcloud/ks.yaml
