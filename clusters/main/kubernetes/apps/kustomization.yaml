@@ -21,3 +21,4 @@ resources:
   - ext-prox/ks.yaml
   - ext-slzb/ks.yaml
   - ext-printer/ks.yaml
+  - pgadmin/ks.yaml
