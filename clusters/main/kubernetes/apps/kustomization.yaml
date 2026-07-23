@@ -4,3 +4,4 @@ resources:
   #- librespeed/ks.yaml
   - cloudflared/ks.yaml
   - kubernetes-dashboard/ks.yaml
+  - authentik/ks.yaml
