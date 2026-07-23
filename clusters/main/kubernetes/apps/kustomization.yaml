@@ -24,3 +24,5 @@ resources:
   - pgadmin/ks.yaml
   - guacamole/ks.yaml
   - prowlarr/ks.yaml
+  - radarr/ks.yaml
+  - sonarr/ks.yaml
