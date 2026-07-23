@@ -27,3 +27,4 @@ resources:
   - radarr/ks.yaml
   - sonarr/ks.yaml
   - seerr/ks.yaml
+  - plex/ks.yaml
