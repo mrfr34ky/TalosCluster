@@ -30,3 +30,8 @@ resources:
   - plex/ks.yaml
   - qbittorrent/ks.yaml
   - ytptube/ks.yaml
+  - deemix/ks.yaml
+  - deemix2/ks.yaml
+  - jdownloader2/ks.yaml
+  - krusader/ks.yaml
+  - filezilla/ks.yaml
