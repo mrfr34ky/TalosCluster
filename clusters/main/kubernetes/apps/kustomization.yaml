@@ -38,3 +38,4 @@ resources:
   - syncthing/ks.yaml
   - profilarr/ks.yaml
   - tracearr/ks.yaml
+  - tailscale/ks.yaml
