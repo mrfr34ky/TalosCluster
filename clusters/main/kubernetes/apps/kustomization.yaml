@@ -37,3 +37,4 @@ resources:
   - filezilla/ks.yaml
   - syncthing/ks.yaml
   - profilarr/ks.yaml
+  - tracearr/ks.yaml
