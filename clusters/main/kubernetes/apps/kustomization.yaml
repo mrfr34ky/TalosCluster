@@ -40,3 +40,4 @@ resources:
   - tracearr/ks.yaml
   - tailscale/ks.yaml
   - flaresolverr/ks.yaml
+  - plex-auto-languages/ks.yaml
