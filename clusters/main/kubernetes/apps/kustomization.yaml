@@ -39,3 +39,4 @@ resources:
   - profilarr/ks.yaml
   - tracearr/ks.yaml
   - tailscale/ks.yaml
+  - flaresolverr/ks.yaml
