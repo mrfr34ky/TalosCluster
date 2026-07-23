@@ -12,3 +12,4 @@ resources:
   - vaultwarden/ks.yaml
   - mosquitto/ks.yaml
   - nextcloud/ks.yaml
+  - paperless-ngx/ks.yaml
