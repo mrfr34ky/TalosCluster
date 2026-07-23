@@ -14,3 +14,4 @@ resources:
   - nextcloud/ks.yaml
   - paperless-ngx/ks.yaml
   - k8tz/ks.yaml
+  - mealie/ks.yaml
