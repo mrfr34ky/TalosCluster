@@ -6,3 +6,4 @@ resources:
   - kubernetes-dashboard/ks.yaml
   - authentik/ks.yaml
   - pihole/ks.yaml
+  - homarr/ks.yaml
