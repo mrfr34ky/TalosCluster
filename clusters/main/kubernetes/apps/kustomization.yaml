@@ -21,7 +21,7 @@ resources:
   - ext-slzb/ks.yaml
   - ext-printer/ks.yaml
   - pgadmin/ks.yaml
-  #- guacamole/ks.yaml
+  - guacamole/ks.yaml
   - prowlarr/ks.yaml
   - radarr/ks.yaml
   - sonarr/ks.yaml
