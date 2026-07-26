@@ -8,10 +8,10 @@ resources:
   - homarr/ks.yaml
   #- home-assistant/ks.yaml
   - frigate/ks.yaml
-  - vaultwarden/ks.yaml
+  #- vaultwarden/ks.yaml
   - mosquitto/ks.yaml
   #- nextcloud/ks.yaml
-  - paperless-ngx/ks.yaml
+  #- paperless-ngx/ks.yaml
   - k8tz/ks.yaml
   - mealie/ks.yaml
   - ext-nas/ks.yaml
@@ -21,7 +21,7 @@ resources:
   - ext-slzb/ks.yaml
   - ext-printer/ks.yaml
   - pgadmin/ks.yaml
-  - guacamole/ks.yaml
+  #- guacamole/ks.yaml
   - prowlarr/ks.yaml
   - radarr/ks.yaml
   - sonarr/ks.yaml
