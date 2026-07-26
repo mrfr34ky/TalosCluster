@@ -11,7 +11,7 @@ resources:
   #- vaultwarden/ks.yaml
   - mosquitto/ks.yaml
   #- nextcloud/ks.yaml
-  #- paperless-ngx/ks.yaml
+  - paperless-ngx/ks.yaml
   - k8tz/ks.yaml
   - mealie/ks.yaml
   - ext-nas/ks.yaml
