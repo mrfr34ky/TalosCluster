@@ -10,7 +10,6 @@ resources:
   - frigate/ks.yaml
   - vaultwarden/ks.yaml
   - mosquitto/ks.yaml
-  #- nextcloud/ks.yaml
   - paperless-ngx/ks.yaml
   - k8tz/ks.yaml
   - mealie/ks.yaml
@@ -40,3 +39,5 @@ resources:
   - tailscale/ks.yaml
   - flaresolverr/ks.yaml
   - plex-auto-languages/ks.yaml
+  #####################CNPG#########################
+  #- nextcloud/ks.yaml
