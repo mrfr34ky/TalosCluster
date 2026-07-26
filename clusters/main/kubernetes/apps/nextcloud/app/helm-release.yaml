@@ -41,7 +41,7 @@ spec:
       s3:
         type: s3
         url: "${S3URL}"
-        bucket: "${S3PREFIX}-nextcloud2"
+        bucket: "${S3PREFIX}-nextcloud-oldroots"
         accessKey: "${S3ID}"
         secretKey: "${S3KEY}"
         encrKey: "${S3KEY}" 
@@ -98,7 +98,7 @@ spec:
         password: ${NEXTCLOUD_CNPG_PWD}
         cluster:
           singleNode: true
-        mode: recovery
+        #mode: recovery
         backups:
           enabled: true
           credentials: s3
@@ -108,12 +108,12 @@ spec:
               backupOwnerReference: self
               immediate: true
               suspend: false
-          #revision: "7"
+          revision: "1"
           retentionPolicy: "7d"
         recovery:
           method: object_store
           credentials: s3
-          #revision: "6"  
+          revision: "0"  
     redis:
       password: ${NEXTCLOUD_REDIS_PWD}
     ingress:
