@@ -6,7 +6,7 @@ resources:
   - authentik/ks.yaml
   #- pihole/ks.yaml
   - homarr/ks.yaml
-  #- home-assistant/ks.yaml
+  - home-assistant/ks.yaml
   - frigate/ks.yaml
   - vaultwarden/ks.yaml
   - mosquitto/ks.yaml
