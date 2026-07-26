@@ -46,7 +46,7 @@ spec:
       s3:
         type: s3
         url: "${S3URL}"
-        bucket: "${S3PREFIX}-home-assistant-15072026"
+        bucket: "${S3PREFIX}-home-assistant"
         accessKey: "${S3ID}"
         secretKey: "${S3KEY}"
         encrKey: "${S3KEY}" 
@@ -81,12 +81,12 @@ spec:
               backupOwnerReference: self
               immediate: true
               suspend: false
-          #revision: "6"
+          revision: "7"
           retentionPolicy: "7d"
         recovery:
           method: object_store
           credentials: s3
-          #revision: "5" 
+          revision: "6" 
     ingress:
         main:
           enabled: true
