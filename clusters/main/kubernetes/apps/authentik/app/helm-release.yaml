@@ -41,7 +41,7 @@ spec:
       s3:
         type: s3
         url: "${S3URL}"
-        bucket: "${S3PREFIX}-authentik-15072026"
+        bucket: "${S3PREFIX}-authentik"
         accessKey: "${S3ID}"
         secretKey: "${S3KEY}"
         encrKey: "${S3KEY}"
@@ -116,12 +116,12 @@ spec:
               backupOwnerReference: self
               immediate: true
               suspend: false
-          #revision: "5"
+          revision: "6"
           retentionPolicy: "7d"
         recovery:
           method: object_store
           credentials: s3
-          #revision: "4"       
+          revision: "5"       
     redis:
       password: ${AUTHENTIK_REDIS_PWD}    
     authentik:
