@@ -92,13 +92,7 @@ spec:
         type: nfs
         server: 192.168.1.49
         path: /mnt/main/apps/nextcloud/nc_data
-        mountPath: /var/www/html/data
-      data-preview:
-        enabled: true
-        type: nfs
-        server: 192.168.1.49
-        path: /var/www/html/data/preview    
-        mountPath: /var/www/html/data/preview            
+        mountPath: /var/www/html/data          
     cnpg:
       main:
         password: ${NEXTCLOUD_CNPG_PWD}
