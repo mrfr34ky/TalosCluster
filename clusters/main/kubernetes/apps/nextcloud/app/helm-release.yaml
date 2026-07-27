@@ -95,12 +95,10 @@ spec:
         mountPath: /var/www/html/data
       data-preview:
         enabled: true
-        targetSelector:
-          main:
-            main:
-              mountPath: /var/www/html/data/preview
-            init-perms:
-              mountPath: /var/www/html/data/preview              
+        type: nfs
+        server: 192.168.1.49
+        path: /var/www/html/data/preview    
+        mountPath: /var/www/html/data/preview            
     cnpg:
       main:
         password: ${NEXTCLOUD_CNPG_PWD}
