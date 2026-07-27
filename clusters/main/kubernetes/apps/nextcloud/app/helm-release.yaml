@@ -92,7 +92,26 @@ spec:
         type: nfs
         server: 192.168.1.49
         path: /mnt/main/apps/nextcloud/nc_data
-        mountPath: /var/www/html/data          
+        mountPath: /var/www/html/data
+      preview:
+        enabled: true
+        size: 200Gi
+        targetSelector:
+          main:
+            main:
+              mountPath: /var/www/html/data/preview
+            init-perms:
+              mountPath: /var/www/html/data/preview
+          nextcloud-cron:
+            nextcloud-cron:
+              mountPath: /var/www/html/data/preview
+          preview-cron:
+            preview-cron:
+              mountPath: /var/www/html/data/preview
+          nginx:
+            nginx:
+              mountPath: /var/www/html/data/preview
+              readOnly: true                   
     cnpg:
       main:
         password: ${NEXTCLOUD_CNPG_PWD}
