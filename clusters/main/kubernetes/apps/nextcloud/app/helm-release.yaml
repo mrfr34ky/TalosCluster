@@ -52,9 +52,9 @@ spec:
       general:
         default_phone_region: BE
         accessIP: ${NGINX_EXTERNAL_IP}
-      previews:
-        max_memory: 5120
-        max_file_size_image: 100
+      #previews:
+      #  max_memory: 5120
+      #  max_file_size_image: 100
       collabora:
         enabled: true
         username: ${COLLABORA_USER}
@@ -92,26 +92,7 @@ spec:
         type: nfs
         server: 192.168.1.49
         path: /mnt/main/apps/nextcloud/nc_data
-        mountPath: /var/www/html/data
-      preview:
-        enabled: true
-        size: 200Gi
-        targetSelector:
-          main:
-            main:
-              mountPath: /var/www/html/data/preview
-            init-perms:
-              mountPath: /var/www/html/data/preview
-          nextcloud-cron:
-            nextcloud-cron:
-              mountPath: /var/www/html/data/preview
-          preview-cron:
-            preview-cron:
-              mountPath: /var/www/html/data/preview
-          nginx:
-            nginx:
-              mountPath: /var/www/html/data/preview
-              readOnly: true                   
+        mountPath: /var/www/html/data                 
     cnpg:
       main:
         password: ${NEXTCLOUD_CNPG_PWD}
@@ -146,7 +127,7 @@ spec:
               enabled: true
               certificateIssuer: domain-0-le-prod
           hosts:
-            - host: next3.${DOMAIN_0}
+            - host: next.${DOMAIN_0}
               paths:
                 - path: /
                   pathType: Prefix   
