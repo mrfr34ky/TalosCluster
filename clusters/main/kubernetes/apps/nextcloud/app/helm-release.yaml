@@ -117,7 +117,7 @@ spec:
               enabled: true
               certificateIssuer: domain-0-le-prod
           hosts:
-            - host: next.${DOMAIN_0}
+            - host: next2.${DOMAIN_0}
               paths:
                 - path: /
                   pathType: Prefix   
