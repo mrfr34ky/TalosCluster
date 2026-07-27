@@ -66,17 +66,27 @@ spec:
         memory_consumption: 2560    
     persistence:
       html:    
-        enabled: true
-        type: nfs
-        server: 192.168.1.49
-        path: /mnt/main/apps/nextcloud/nc_html
-        mountPath: /var/www/html/
+        volsync:
+          - name: b2
+            type: restic
+            credentials: s3
+            dest:
+              enabled: true                          
+            src:
+              enabled: true
+              trigger:
+                schedule: 48 3 * * *
       config:  
-        enabled: true
-        type: nfs
-        server: 192.168.1.49
-        path: /mnt/main/apps/nextcloud/nc_config
-        mountPath: /var/www/html/config
+        volsync:
+          - name: b2
+            type: restic
+            credentials: s3
+            dest:
+              enabled: true                          
+            src:
+              enabled: true
+              trigger:
+                schedule: 55 3 * * *
       data:
         enabled: true
         type: nfs
