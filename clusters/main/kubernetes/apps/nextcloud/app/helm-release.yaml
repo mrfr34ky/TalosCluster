@@ -10,7 +10,7 @@ spec:
   chart:
     spec:
       chart: nextcloud
-      version: 46.2.11
+      version: 46.4.0
       sourceRef:
         kind: HelmRepository
         name: truecharts
@@ -87,12 +87,12 @@ spec:
               enabled: true
               trigger:
                 schedule: 55 3 * * *
-      #data:
-      #  enabled: true
-      #  type: nfs
-      #  server: 192.168.1.49
-      #  path: /mnt/main/apps/nextcloud/nc_data
-      #  mountPath: /var/www/html/data                 
+      data:
+        enabled: true
+        type: nfs
+        server: 192.168.1.49
+        path: /mnt/main/apps/nextcloud/nc_data
+        mountPath: /var/www/html/data                 
     cnpg:
       main:
         password: ${NEXTCLOUD_CNPG_PWD}
