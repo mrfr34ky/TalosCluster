@@ -50,6 +50,8 @@ spec:
                 #- IMAP_URL: "imap.gmail.com"
                 #- IMAP_USERNAME: ${GMAIL_USER}
                 #- IMAP_PASSWORD: ${AUTHENTIK_SMTP_PWD}
+                - SMTP_USERNAME: ${GMAIL_USER}
+                - SMTP_PASSWORD: ${AUTHENTIK_SMTP_PWD}
                 - IMAP_FOLDER: "test"
                 - SMTP_URL: "smtp.google.com"
                 - MAIL_SENDER: ${GMAIL_USER}
