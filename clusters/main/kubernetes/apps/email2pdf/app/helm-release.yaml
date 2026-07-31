@@ -41,11 +41,6 @@ spec:
       repository: ghcr.io/rob-luke/emails-html-to-pdf
       pullPolicy: IfNotPresent
       tag: latest 
-    service:
-      main:
-        ports:
-          main:
-            enabled: false 
     workload:
       main:
         podSpec:
