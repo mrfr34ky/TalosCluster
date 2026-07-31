@@ -48,11 +48,11 @@ spec:
             main:
               probes:
                 liveness:
-                  type: none
+                  enabled: false
                 readiness:
-                  type: none
+                  enabled: false
                 startup:
-                  type: none
+                  enabled: false
               env:
                 #- IMAP_URL: "imap.gmail.com"
                 #- IMAP_USERNAME: ${GMAIL_USER}
