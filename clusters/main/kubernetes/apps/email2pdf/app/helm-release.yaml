@@ -47,7 +47,6 @@ spec:
         ports:
           main:
             enabled: false
-            protocol: http  
     workload:
       main:
         podSpec:
