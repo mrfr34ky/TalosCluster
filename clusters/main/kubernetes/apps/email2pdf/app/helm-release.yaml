@@ -46,6 +46,13 @@ spec:
         podSpec:
           containers:
             main:
+              probes:
+                liveness:
+                  type: none
+                readiness:
+                  type: none
+                startup:
+                  type: none
               env:
                 #- IMAP_URL: "imap.gmail.com"
                 #- IMAP_USERNAME: ${GMAIL_USER}
