@@ -32,6 +32,7 @@ resources:
   - tailscale/ks.yaml
   - flaresolverr/ks.yaml
   - plex-auto-languages/ks.yaml
+  - email2pdf/ks.yaml
   #####################CNPG#########################
   - nextcloud/ks.yaml
   - mealie/ks.yaml
