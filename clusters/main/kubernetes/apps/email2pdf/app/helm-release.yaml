@@ -44,9 +44,6 @@ spec:
     service:
       main:
         enabled: false
-        ports:
-          main:
-            enabled: false
     workload:
       main:
         podSpec:
