@@ -76,5 +76,5 @@ spec:
                 MAIL_DESTINATION: "${GMAIL_USER}"
                 INTER_RUN_INTERVAL: "60"
                 #HOSTS: 127.0.0.1 tracking.paypal.com
-                WKHTMLTOPDF_OPTIONS: "{\"load-media-error-handling\": \"ignore\", \"title\": \"email2pdf\"}"
+                WKHTMLTOPDF_OPTIONS: "{\"load-media-error-handling\": \"ignore\", \"--title\": \"email2pdf\"}"
                 PRINT_FAILED_MSG: "true"
