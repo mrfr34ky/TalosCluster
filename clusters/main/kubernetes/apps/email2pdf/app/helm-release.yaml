@@ -41,6 +41,10 @@ spec:
       repository: ghcr.io/rob-luke/emails-html-to-pdf
       pullPolicy: IfNotPresent
       tag: latest
+    securityContext:
+      container:
+        readOnlyRootFilesystem: false
+        runAsNonRoot: true  
     service:
       main:
         enabled: false   
