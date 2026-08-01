@@ -72,8 +72,8 @@ spec:
                 SMTP_PASSWORD: "${EMAIL2PDF_SMTP_PWD}"
                 IMAP_FOLDER: "Orders"
                 SMTP_URL: "smtp.gmail.com"
-                MAIL_SENDER: "${GMAIL_USER_ORDERS}"
-                MAIL_DESTINATION: "${GMAIL_USER}"
+                MAIL_SENDER: "${GMAIL_USER}"
+                MAIL_DESTINATION: "${GMAIL_USER_ORDERS}"
                 INTER_RUN_INTERVAL: "60"
                 #HOSTS: 127.0.0.1 tracking.paypal.com
                 WKHTMLTOPDF_OPTIONS: "{\"load-media-error-handling\": \"ignore\"}"
