@@ -67,6 +67,7 @@ spec:
                 #- IMAP_USERNAME: ${GMAIL_USER}
                 #- IMAP_PASSWORD: ${AUTHENTIK_SMTP_PWD}
                 SMTP_PORT: 587
+                SMTP_TLS: "true"
                 SMTP_USERNAME: ${GMAIL_USER}
                 SMTP_PASSWORD: ${AUTHENTIK_SMTP_PWD}
                 IMAP_FOLDER: "test"
