@@ -72,7 +72,7 @@ spec:
                 SMTP_PASSWORD: "${EMAIL2PDF_SMTP_PWD}"
                 IMAP_FOLDER: "Orders"
                 SMTP_URL: "smtp.gmail.com"
-                MAIL_SENDER: "${GMAIL_USER}"
+                MAIL_SENDER: "${GMAIL_USER_ORDERS}"
                 MAIL_DESTINATION: "${GMAIL_USER}"
                 INTER_RUN_INTERVAL: "600"
                 #HOSTS: 127.0.0.1 tracking.paypal.com
