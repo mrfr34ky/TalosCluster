@@ -72,4 +72,4 @@ spec:
                 MAIL_DESTINATION: ${GMAIL_USER}
                 INTER_RUN_INTERVAL: "600"
                 #- HOSTS=127.0.0.1 tracking.paypal.com
-                WKHTMLTOPDF_OPTIONS: "{\"load-media-error-handling\": \"ignore\"}, virtualenvs.create false" 
+                WKHTMLTOPDF_OPTIONS: "{\"load-media-error-handling\": \"ignore\"}, virtualenvs.create: false" 
