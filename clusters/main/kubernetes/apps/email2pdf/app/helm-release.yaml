@@ -70,7 +70,7 @@ spec:
                 SMTP_TLS: "true"
                 SMTP_USERNAME: "${GMAIL_USER}"
                 SMTP_PASSWORD: "${EMAIL2PDF_SMTP_PWD}"
-                IMAP_FOLDER: "test"
+                IMAP_FOLDER: "Orders"
                 SMTP_URL: "smtp.gmail.com"
                 MAIL_SENDER: "${GMAIL_USER}"
                 MAIL_DESTINATION: "${GMAIL_USER}"
