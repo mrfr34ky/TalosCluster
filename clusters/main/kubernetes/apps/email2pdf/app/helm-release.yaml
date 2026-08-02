@@ -41,12 +41,12 @@ spec:
       repository: ghcr.io/mrfr34ky/emails-html-to-pdf
       pullPolicy: IfNotPresent
       tag: latest
-    #securityContext:
-    #  container:
-    #    readOnlyRootFilesystem: false
-    #    runAsNonRoot: false
-    #    runAsUser: 0
-    #    runAsGroup: 0  
+    securityContext:
+      container:
+        readOnlyRootFilesystem: false
+        runAsNonRoot: false
+        runAsUser: 0
+        runAsGroup: 0  
     service:
       main:
         enabled: false   
