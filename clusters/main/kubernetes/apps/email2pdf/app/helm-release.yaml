@@ -38,15 +38,15 @@ spec:
       requests:
         cpu: 10m
     image:
-      repository: ghcr.io/rob-luke/emails-html-to-pdf
+      repository: ghcr.io/mrfr34ky/emails-html-to-pdf
       pullPolicy: IfNotPresent
       tag: latest
-    securityContext:
-      container:
-        readOnlyRootFilesystem: false
-        runAsNonRoot: false
-        runAsUser: 0
-        runAsGroup: 0  
+    #securityContext:
+    #  container:
+    #    readOnlyRootFilesystem: false
+    #    runAsNonRoot: false
+    #    runAsUser: 0
+    #    runAsGroup: 0  
     service:
       main:
         enabled: false   
@@ -66,11 +66,12 @@ spec:
                 IMAP_URL: "imap.gmail.com"
                 IMAP_USERNAME: "${GMAIL_USER}"
                 IMAP_PASSWORD: "${EMAIL2PDF_SMTP_PWD}"
+                IMAP_FOLDER_1: "test"
+                EMAIL_SUBJECT_TEMPLATE_1: "email2pdf-test {subject}"
                 SMTP_PORT: "587"
                 SMTP_TLS: "true"
                 SMTP_USERNAME: "${GMAIL_USER}"
                 SMTP_PASSWORD: "${EMAIL2PDF_SMTP_PWD}"
-                IMAP_FOLDER: "Orders"
                 SMTP_URL: "smtp.gmail.com"
                 MAIL_SENDER: "${GMAIL_USER}"
                 MAIL_DESTINATION: "${GMAIL_USER}"
@@ -78,3 +79,5 @@ spec:
                 #HOSTS: 127.0.0.1 tracking.paypal.com
                 WKHTMLTOPDF_OPTIONS: "{\"load-media-error-handling\": \"ignore\"}"
                 PRINT_FAILED_MSG: "true"
+                DELETE_AFTER_PROCESS: "true"
+                DELETE_FOLDER: "[Gmail]/Bin"
