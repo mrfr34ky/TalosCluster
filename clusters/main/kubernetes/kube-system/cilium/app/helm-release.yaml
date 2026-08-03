@@ -34,6 +34,8 @@ spec:
   uninstall:
     keepHistory: false
   values:
+    envoy:
+      enabled: false
     # autoDirectNodeRoutes: true
     # routingMode: native
     hubble:
