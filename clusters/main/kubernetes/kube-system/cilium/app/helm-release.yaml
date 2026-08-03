@@ -39,7 +39,11 @@ spec:
     # autoDirectNodeRoutes: true
     # routingMode: native
     hubble:
-      enabled: false
+      enabled: true
+      relay:
+        enabled: true
+      ui:
+        enabled: true
     cluster:
       name: ${CLUSTERNAME}
       id: 1
