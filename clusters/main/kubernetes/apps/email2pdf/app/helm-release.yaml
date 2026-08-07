@@ -82,7 +82,7 @@ spec:
                 MAIL_SENDER: "${GMAIL_USER}"
                 MAIL_DESTINATION: "${GMAIL_USER}"
                 INTER_RUN_INTERVAL: "600"
-                #HOSTS: 127.0.0.1 tracking.paypal.com
+                HOSTS: "127.0.0.1 megekko.nl"
                 WKHTMLTOPDF_OPTIONS: "{\"load-media-error-handling\": \"ignore\", \"disable-javascript\": \"\", \"disable-local-file-access\": \"\", \"disable-external-links\": \"\"}"
                 PRINT_FAILED_MSG: "true"
                 DELETE_AFTER_PROCESS: "true"
