@@ -106,7 +106,7 @@ spec:
         enabled: true
         user: tracearr
         database: tracearr
-        #mode: recovery
+        mode: recovery
         cluster:
           singleNode: true
         backups:
@@ -118,12 +118,12 @@ spec:
               backupOwnerReference: self
               immediate: true
               suspend: false
-          revision: "1"
+          revision: "2"
           retentionPolicy: "7d"
         recovery:
           method: object_store
           credentials: s3
-          revision: "0"  
+          revision: "1"  
 
     redis:
       enabled: true
