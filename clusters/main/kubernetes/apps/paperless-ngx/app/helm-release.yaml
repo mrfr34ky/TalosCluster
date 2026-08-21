@@ -74,7 +74,7 @@ spec:
         password: ${PAPERLESS_CNPG_PWD}
         cluster:
           singleNode: true
-        #mode: recovery
+        mode: recovery
         backups:
           enabled: true
           credentials: s3
@@ -84,12 +84,12 @@ spec:
               backupOwnerReference: self
               immediate: true
               suspend: false
-          revision: "2"
+          revision: "3"
           retentionPolicy: "7d"
         recovery:
           method: object_store
           credentials: s3
-          revision: "1"
+          revision: "2"
     workload:
       main:
         podSpec:
