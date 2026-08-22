@@ -56,13 +56,7 @@ spec:
             src:
               enabled: true
               trigger:
-                schedule: 12 5 * * *
-              pruneIntervalDays: 7
-              retain:
-                daily: 30
-                weekly: 1
-                monthly: 1
-                yearly: 1            
+                schedule: 12 5 * * *          
       films:
         enabled: true
         path: /mnt/main/Media/Films
