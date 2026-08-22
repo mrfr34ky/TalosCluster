@@ -41,7 +41,7 @@ spec:
       s3:
         type: s3
         url: "${S3URL}"
-        bucket: "${S3PREFIX}-guacamole-15072026"
+        bucket: "${S3PREFIX}-guacamole"
         accessKey: "${S3ID}"
         secretKey: "${S3KEY}"
         encrKey: "${S3KEY}"
@@ -80,7 +80,7 @@ spec:
         password: ${GUACAMOLE_CNPG_PWD}
         cluster:
           singleNode: true
-        mode: recovery
+        #mode: recovery
         backups:
           enabled: true
           credentials: s3
@@ -90,12 +90,12 @@ spec:
               backupOwnerReference: self
               immediate: true
               suspend: false
-          #revision: "4"
+          revision: "0"
           retentionPolicy: "7d"
         recovery:
           method: object_store
           credentials: s3
-          #revision: "3"    
+          revision: "0"    
     ingress:
         main:
           enabled: true
