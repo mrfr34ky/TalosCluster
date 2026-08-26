@@ -16,7 +16,7 @@ resources:
   - ext-printer/ks.yaml
   - pgadmin/ks.yaml
   - prowlarr/ks.yaml
-  #- radarr/ks.yaml
+  - radarr/ks.yaml
   - sonarr/ks.yaml
   - seerr/ks.yaml
   - plex/ks.yaml
