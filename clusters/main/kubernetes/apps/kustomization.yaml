@@ -7,7 +7,7 @@ resources:
   - homarr/ks.yaml
   - frigate/ks.yaml
   #- mosquitto/ks.yaml
-  - k8tz/ks.yaml
+  #- k8tz/ks.yaml
   - ext-nas/ks.yaml
   - ext-pikvm/ks.yaml
   - ext-jetkvm/ks.yaml
