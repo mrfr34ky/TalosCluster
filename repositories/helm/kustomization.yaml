@@ -14,5 +14,5 @@ resources:
   - openebs.yaml
   - prometheus-community.yaml
   - truecharts.yaml
-  - k8tz.yaml
+  #- k8tz.yaml
 # more goes here!
