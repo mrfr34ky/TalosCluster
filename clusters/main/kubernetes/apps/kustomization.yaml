@@ -41,5 +41,5 @@ resources:
   - paperless-ngx/ks.yaml
   - vaultwarden/ks.yaml
   - authentik/ks.yaml
-  #- tracearr/ks.yaml
+  - tracearr/ks.yaml
   
