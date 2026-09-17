@@ -35,8 +35,12 @@ spec:
       stopAll: false    
     TZ: Europe/Brussels
     resources:
+      imits:
+        cpu: 4000m
+        memory: 8Gi
       requests:
-        cpu: 25m       
+        cpu: 1000m
+        memory: 2Gi      
     credentials:
       s3:
         type: s3
@@ -73,13 +77,6 @@ spec:
         mountPath: /media/downloads
         server: 192.168.1.49
         type: nfs
-    resources:
-      limits:
-        cpu: 4000m
-        memory: 8Gi
-      requests:
-        cpu: 1000m
-        memory: 2Gi    
     ingress:
         main:
           enabled: true
