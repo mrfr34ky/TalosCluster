@@ -36,10 +36,10 @@ spec:
     TZ: Europe/Brussels
     resources:
       limits:
-        cpu: 20m
+        cpu: 2000m
         memory: 4Gi
       requests:
-        cpu: 10m
+        cpu: 1000m
         memory: 2Gi      
     credentials:
       s3:
