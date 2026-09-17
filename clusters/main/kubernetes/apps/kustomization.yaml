@@ -18,7 +18,6 @@ resources:
   - prowlarr/ks.yaml
   - radarr/ks.yaml
   - sonarr/ks.yaml
-  - seerr/ks.yaml
   - plex/ks.yaml
   #- qbittorrent/ks.yaml
   - ytptube/ks.yaml
@@ -43,4 +42,5 @@ resources:
   - vaultwarden/ks.yaml
   - authentik/ks.yaml
   - tracearr/ks.yaml
+  - seerr/ks.yaml
   

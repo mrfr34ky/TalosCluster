@@ -72,3 +72,26 @@ spec:
               paths:
                 - path: /
                   pathType: Prefix
+    cnpg:
+      main:
+        enabled: true
+        user: seerr
+        database: seerr
+        #mode: recovery
+        cluster:
+          singleNode: true
+        backups:
+          enabled: true
+          credentials: s3
+          scheduledBackups:
+            - name: daily-backup
+              schedule: "0 22 5 * * *"
+              backupOwnerReference: self
+              immediate: true
+              suspend: false
+          revision: "0"
+          retentionPolicy: "7d"
+        recovery:
+          method: object_store
+          credentials: s3
+          revision: "0"               
