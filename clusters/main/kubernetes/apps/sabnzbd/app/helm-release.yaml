@@ -79,7 +79,7 @@ spec:
         memory: 8Gi
       requests:
         cpu: 1000m
-        memory: 2Gi    
+        memory: 3Gi    
     ingress:
         main:
           enabled: true
