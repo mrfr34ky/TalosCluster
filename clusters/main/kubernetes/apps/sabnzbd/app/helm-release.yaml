@@ -70,7 +70,7 @@ spec:
       downloads:
         enabled: true
         path: /mnt/main/Media/downloads
-        mountPath: /data/usenet
+        mountPath: /media/downloads
         server: 192.168.1.49
         type: nfs
     ingress:
