@@ -20,7 +20,7 @@ resources:
   - sonarr/ks.yaml
   - seerr/ks.yaml
   - plex/ks.yaml
-  - qbittorrent/ks.yaml
+  #- qbittorrent/ks.yaml
   - ytptube/ks.yaml
   - deemix/ks.yaml
   - deemix2/ks.yaml
