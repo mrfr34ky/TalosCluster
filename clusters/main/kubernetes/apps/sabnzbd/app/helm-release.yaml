@@ -35,7 +35,7 @@ spec:
       stopAll: false    
     TZ: Europe/Brussels
     resources:
-      imits:
+      limits:
         cpu: 4000m
         memory: 8Gi
       requests:
