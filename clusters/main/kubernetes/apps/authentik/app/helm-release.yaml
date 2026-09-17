@@ -208,4 +208,8 @@ spec:
             - host: "jdl.${DOMAIN_0}"
               paths:
                 - path: /outpost.goauthentik.io
-                  pathType: ImplementationSpecific                    
+                  pathType: ImplementationSpecific
+            - host: "sabnzbd.${DOMAIN_0}"
+              paths:
+                - path: /outpost.goauthentik.io
+                  pathType: ImplementationSpecific                             
