@@ -63,6 +63,12 @@ spec:
           containers:
             main:
               env:
+                webUIPort: "{{ .Values.service.main.ports.main.port }}"
+                serverPort: "{{ .Values.service.comm.ports.comm.port }}"
+                # User Defined
+                internalNode: true
+                serverIP: "127.0.0.1"
+                nodeID: "Internal Node"
                 seededApiKey: "${TDARR_API}"
       media:
         enabled: true
