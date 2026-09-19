@@ -78,7 +78,7 @@ spec:
                 internalNode: true
                 serverIP: "127.0.0.1"
                 nodeID: "Internal Node"
-                #seededApiKey: "${TDARR_API}"
+                seededApiKey: "${TDARR_API}"
                 auth: true
     ingress:
         main:
@@ -92,10 +92,10 @@ spec:
               certificateIssuer: domain-0-le-prod
             nginx:
               enabled: true
-              auth:
-                type: "authentik"
-                internalHost: "authentik-http.authentik.svc.cluster.local:10230"
-                externalHost: "tdarr.${DOMAIN_0}"  
+              #auth:
+              #  type: "authentik"
+              #  internalHost: "authentik-http.authentik.svc.cluster.local:10230"
+              #  externalHost: "tdarr.${DOMAIN_0}"  
           hosts:
             - host: tdarr.${DOMAIN_0}
               paths:
