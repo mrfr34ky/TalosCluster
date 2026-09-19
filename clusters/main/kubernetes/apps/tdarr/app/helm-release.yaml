@@ -57,6 +57,15 @@ spec:
               enabled: true
               trigger:
                 schedule: 10 6 * * *
+      media:
+        enabled: true
+        path: /mnt/main/Media/
+        mountPath: /media
+        server: 192.168.1.49
+        type: nfs 
+      logs:
+        enabled: false
+        mountPath: "/app/logs"           
     workload:
       main:
         podSpec:
@@ -70,15 +79,6 @@ spec:
                 serverIP: "127.0.0.1"
                 nodeID: "Internal Node"
                 seededApiKey: "${TDARR_API}"
-      media:
-        enabled: true
-        path: /mnt/main/Media/
-        mountPath: /media
-        server: 192.168.1.49
-        type: nfs   
-      logs:
-        enabled: false
-        mountPath: "/app/logs"  
     ingress:
         main:
           enabled: true
