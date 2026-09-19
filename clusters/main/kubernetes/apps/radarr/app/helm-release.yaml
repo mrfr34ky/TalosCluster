@@ -35,8 +35,12 @@ spec:
       stopAll: false
     TZ: Europe/Brussels
     resources:
+      limits:
+        cpu: 1000m
+        memory: 1536Mi
       requests:
         cpu: 10m
+        memory: 256Mi    
     credentials:
       s3:
         type: s3
