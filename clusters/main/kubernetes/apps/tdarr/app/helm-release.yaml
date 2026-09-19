@@ -79,6 +79,7 @@ spec:
                 serverIP: "127.0.0.1"
                 nodeID: "Internal Node"
                 seededApiKey: "${TDARR_API}"
+                apiKey: "${TDARR_API}"
                 auth: true
     ingress:
         main:
