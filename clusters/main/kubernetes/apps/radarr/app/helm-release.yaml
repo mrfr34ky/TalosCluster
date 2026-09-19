@@ -36,14 +36,7 @@ spec:
     TZ: Europe/Brussels
     resources:
       requests:
-        cpu: 10m
-    resources:
-      limits:
-        cpu: 1000m
-        memory: 1536Mi
-      requests:
-        cpu: 50m
-        memory: 256Mi    
+        cpu: 10m   
     credentials:
       s3:
         type: s3
