@@ -63,7 +63,7 @@ spec:
           containers:
             main:
               env:
-                seededApiKey: ${TDARR_API}  
+                seededApiKey: "${TDARR_API}"
       media:
         enabled: true
         path: /mnt/main/Media/
