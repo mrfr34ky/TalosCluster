@@ -63,7 +63,7 @@ spec:
             src:
               enabled: true
               trigger:
-                schedule: 17 2 * * *
+                schedule: 17 0 * * *
       drive:
         volsync:
           - name: b2
@@ -74,7 +74,7 @@ spec:
             src:
               enabled: true
               trigger:
-                schedule: 24 2 * * *             
+                schedule: 24 0 * * *             
     cnpg:
       main:
         password: ${GUACAMOLE_CNPG_PWD}
