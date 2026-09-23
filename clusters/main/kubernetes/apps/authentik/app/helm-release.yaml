@@ -56,7 +56,7 @@ spec:
             src:
               enabled: true
               trigger:
-                schedule: 0 1 * * *    
+                schedule: 0 23 * * *    
       templates:
         volsync:
           - name: b2
@@ -67,7 +67,7 @@ spec:
             src:
               enabled: true
               trigger:
-                schedule: 7 1 * * *   
+                schedule: 7 23 * * *   
       blueprints:
         volsync:
           - name: b2
@@ -78,7 +78,7 @@ spec:
             src:
               enabled: true
               trigger:
-                schedule: 14 1 * * *    
+                schedule: 14 23 * * *    
       certs:
         volsync:
           - name: b2
@@ -89,7 +89,7 @@ spec:
             src:
               enabled: true
               trigger:
-                schedule: 21 1 * * *   
+                schedule: 21 23 * * *   
       geoip:
         volsync:
           - name: b2
@@ -100,7 +100,7 @@ spec:
             src:
               enabled: true
               trigger:
-                schedule: 28 1 * * *        
+                schedule: 28 23 * * *        
     cnpg:
       main:
         password: ${AUTHENTIK_CNPG_PWD}
@@ -112,7 +112,7 @@ spec:
           credentials: s3
           scheduledBackups:
             - name: daily-backup
-              schedule: "0 35 1 * * *"
+              schedule: "0 35 23 * * *"
               backupOwnerReference: self
               immediate: true
               suspend: false

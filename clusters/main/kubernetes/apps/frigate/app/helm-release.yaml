@@ -56,7 +56,7 @@ spec:
             src:
               enabled: true
               trigger:
-                schedule: 10 2 * * *   
+                schedule: 10 0 * * *   
       media:
         enabled: true
         path: /mnt/main/Surveillance

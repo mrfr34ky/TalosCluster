@@ -56,7 +56,7 @@ spec:
             src:
               enabled: true
               trigger:
-                schedule: 49 1 * * *
+                schedule: 49 23 * * *
       downloads:
         enabled: true
         mountPath: /downloads2
