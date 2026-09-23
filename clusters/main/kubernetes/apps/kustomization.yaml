@@ -29,7 +29,7 @@ resources:
   - syncthing/ks.yaml
   - profilarr/ks.yaml
   - tailscale/ks.yaml
-  - flaresolverr/ks.yaml
+  #- flaresolverr/ks.yaml
   - plex-auto-languages/ks.yaml
   - email2pdf/ks.yaml
   - sabnzbd/ks.yaml
