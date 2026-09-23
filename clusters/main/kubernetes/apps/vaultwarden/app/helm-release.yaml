@@ -80,7 +80,7 @@ spec:
             src:
               enabled: true
               trigger:
-                schedule: 47 5 * * *
+                schedule: 47 3 * * *
     cnpg:
       main:
         password: ${VAULTWARDEN_CNPG_PWD}
@@ -92,7 +92,7 @@ spec:
           credentials: s3
           scheduledBackups:
             - name: daily-backup
-              schedule: "0 54 5 * * *"
+              schedule: "0 54 3 * * *"
               backupOwnerReference: self
               immediate: true
               suspend: false

@@ -61,7 +61,7 @@ spec:
             src:
               enabled: true
               trigger:
-                schedule: 45 2 * * *
+                schedule: 45 0 * * *
     homeassistant:
       trusted_proxies:
         - 172.16.0.0/16
@@ -77,7 +77,7 @@ spec:
           credentials: s3
           scheduledBackups:
             - name: daily-backup
-              schedule: "0 52 2 * * *"
+              schedule: "0 52 0 * * *"
               backupOwnerReference: self
               immediate: true
               suspend: false

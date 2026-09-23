@@ -56,7 +56,7 @@ spec:
             src:
               enabled: true
               trigger:
-                schedule: 26 5 * * *  
+                schedule: 26 3 * * *  
       series:
         enabled: true
         path: /mnt/main/Media/Series

@@ -56,7 +56,7 @@ spec:
             src:
               enabled: true
               trigger:
-                schedule: 6 3 * * *
+                schedule: 6 1 * * *
       datapath:
         volsync:
           - name: b2
@@ -67,7 +67,7 @@ spec:
             src:
               enabled: true
               trigger:
-                schedule: 13 3 * * *                  
+                schedule: 13 1 * * *                  
       homeds:
         enabled: true
         path: /mnt/main/HomeDS

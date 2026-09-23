@@ -56,7 +56,7 @@ spec:
             src:
               enabled: true
               trigger:
-                schedule: 44 4 * * *
+                schedule: 44 2 * * *
     workload:
       main:
         podSpec:

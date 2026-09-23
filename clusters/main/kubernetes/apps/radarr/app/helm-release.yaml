@@ -56,7 +56,7 @@ spec:
             src:
               enabled: true
               trigger:
-                schedule: 12 5 * * *          
+                schedule: 12 3 * * *          
       films:
         enabled: true
         path: /mnt/main/Media/Films

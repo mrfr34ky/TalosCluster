@@ -56,7 +56,7 @@ spec:
             src:
               enabled: true
               trigger:
-                schedule: 33 5 * * *
+                schedule: 33 3 * * *
       balazshome:
         enabled: true
         path: /mnt/main/HomeDS/Balazs
