@@ -216,4 +216,8 @@ spec:
             - host: "tdarr.${DOMAIN_0}"
               paths:
                 - path: /outpost.goauthentik.io
-                  pathType: ImplementationSpecific                               
+                  pathType: ImplementationSpecific
+            - host: "profilarr.${DOMAIN_0}"
+              paths:
+                - path: /outpost.goauthentik.io
+                  pathType: ImplementationSpecific                                     
