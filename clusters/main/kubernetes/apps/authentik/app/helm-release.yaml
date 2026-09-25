@@ -220,4 +220,8 @@ spec:
             - host: "profilarr.${DOMAIN_0}"
               paths:
                 - path: /outpost.goauthentik.io
-                  pathType: ImplementationSpecific                                     
+                  pathType: ImplementationSpecific
+            - host: "tracearr.${DOMAIN_0}"
+              paths:
+                - path: /outpost.goauthentik.io
+                  pathType: ImplementationSpecific                                            

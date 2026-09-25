@@ -96,6 +96,10 @@ spec:
               certificateIssuer: domain-0-le-prod
             nginx:
               enabled: true
+              auth:
+                type: "authentik"
+                internalHost: "authentik-http.authentik.svc.cluster.local:10230"
+                externalHost: "tracearr.${DOMAIN_0}"               
           hosts:
             - host: tracearr.${DOMAIN_0}
               paths:
